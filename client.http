@@ -23,4 +23,15 @@ Content-Type: application/json
 {
   "prompt": "clean arquitecture, ddd"
 }
+###
+
+# @name generate-ai-complete
+POST  http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "61d070b7-c924-43f4-8cf3-a126fda087cb",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: ''' {transcription} '''"
+}
 
